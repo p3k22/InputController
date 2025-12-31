@@ -1,0 +1,33 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="runtime-stats-overlay" style="position: absolute; left: 12px; top: 12px; background-color: rgba(20, 20, 20, 0.95); padding: 10px; width: 240px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; display: none;">
+        <ui:Label name="runtime-stats-header" text="Input Runtime Values" style="font-size: 12px; color: rgb(220, 220, 220); margin-bottom: 8px; -unity-font-style: bold;" />
+        <ui:VisualElement name="runtime-values-overlay-container" style="flex-direction: column;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="root" style="position: absolute; left: 50%; top: 50%; translate: -50% -50%; background-color: rgba(20, 20, 20, 0.95); padding: 15px; width: 300px; min-width: 300px; max-height: 560px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;">
+        <ui:VisualElement name="drag-handle" style="height: 16px; background-color: rgba(80, 80, 80, 0.6); margin: -15px -15px 10px -15px; border-top-left-radius: 4px; border-top-right-radius: 4px;" />
+        <ui:Label name="window-header" text="Input Config Map" style="unity-text-align: middle-center; font-size: 12px; color: rgb(220, 220, 220); margin-bottom: 10px; flex-grow: 1; -unity-text-align: upper-center; -unity-font-style: bold-and-italic;" />
+        <ui:VisualElement name="device-toggle" style="flex-direction: row; margin-bottom: 10px; justify-content: center;">
+            <ui:Button name="btn-keyboard" text="Keyboard" style="width: 80px; height: 24px; margin-right: 8px; background-color: rgb(60, 100, 160); color: white; font-size: 11px;" />
+            <ui:Button name="btn-gamepad" text="Gamepad" style="width: 80px; height: 24px; background-color: rgb(60, 60, 60); color: rgb(180, 180, 180); font-size: 11px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-direction: row; margin-bottom: 10px; align-items: center; padding-top: 20px;">
+            <ui:TextField name="profile-name-field" value="default" style="flex-grow: 1; height: 22px; margin-right: 6px; background-color: rgb(30, 30, 30); color: rgb(255, 255, 255); font-size: 10px;" />
+            <ui:Button name="profile-dropdown-button" style="height: 22px; padding-left: 6px; padding-right: 6px; background-color: rgb(40, 40, 40); color: white; font-size: 10px;" />
+            <ui:Button name="profile-dropdown-toggle-button" text="▼" style="width: 24px; height: 22px; margin-left: 6px; background-color: rgb(40, 40, 40); color: white; font-size: 10px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="stats-toggle-row" style="flex-direction: row; margin-bottom: 10px; align-items: center;">
+            <ui:Toggle name="toggle-show-stats" value="true" style="width: 16px; height: 16px; margin-right: 8px; margin-top: 15px; margin-bottom: 8px; margin-left: 8px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-text-align: middle-left; overflow: visible; font-size: 6px;" />
+            <ui:Label text="Show Stats" style="font-size: 12px; color: rgb(220, 220, 220); -unity-text-align: middle-left; margin-top: 10px;" />
+        </ui:VisualElement>
+        <ui:ScrollView name="bindings-scroll" style="flex-grow: 1;">
+            <ui:VisualElement name="bindings-container" />
+        </ui:ScrollView>
+        <ui:VisualElement style="flex-direction: row; margin-top: 10px;">
+            <ui:Button name="btn-apply" text="Save" style="flex-grow: 1; height: 24px; margin-right: 6px; background-color: rgb(50, 50, 50); color: rgb(128, 128, 128); font-size: 10px;" />
+            <ui:Button name="btn-reset" text="Reset" style="flex-grow: 1; height: 24px; background-color: rgb(140, 50, 50); color: white; font-size: 10px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-direction: row; height: 30px; margin-top: 10px; padding-top: 0; padding-bottom: 20px; min-height: auto; -unity-text-align: lower-left; transform-origin: center;">
+            <ui:Label name="status-label" text="Status" style="unity-text-align: middle-center; font-size: 14px; color: rgb(72, 209, 54); margin-bottom: 1px; flex-grow: 1; -unity-text-align: lower-left; margin-top: 5px; padding-top: 25px; margin-right: 5px; margin-left: 5px; visibility: hidden; white-space: nowrap;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

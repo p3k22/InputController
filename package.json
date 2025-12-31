@@ -1,0 +1,15 @@
+{
+  "name": "com.p3k.inputcontroller",
+  "version": "1.0.0",
+  "displayName": "P3k Input Controller",
+  "description": "Config-driven input layer for Unity Input System with runtime rebinding, profile save/load, per-input analog toggles, and an optional UI Toolkit bindings window.",
+  "documentationUrl": "https://github.com/p3k22/InputController/#readme",
+  "author": {
+    "name": "P3k"
+  },
+  "unity": "2022.3",
+  "dependencies": {
+    "com.unity.inputsystem": "1.7.0",
+    "com.unity.ui": "1.0.0"
+  }
+}
